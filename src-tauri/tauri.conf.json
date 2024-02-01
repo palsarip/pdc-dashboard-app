@@ -12,8 +12,19 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "window": {
+        "all": false,
+        "close": true,
+        "hide": true,
+        "show": true,
+        "maximize": true,
+        "minimize": true,
+        "unmaximize": true,
+        "unminimize": true,
+        "startDragging": true
+      }
     },
+
     "bundle": {
       "active": true,
       "category": "DeveloperTool",
@@ -55,11 +66,12 @@
     },
     "windows": [
       {
-        "fullscreen": false,
-        "height": 600,
-        "resizable": true,
         "title": "PDC Dashboard",
-        "width": 800
+        "width": 900,
+        "height": 600,
+        "fullscreen": false,
+        "resizable": true,
+        "decorations": false
       }
     ]
   }
