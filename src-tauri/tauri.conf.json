@@ -67,11 +67,15 @@
     "windows": [
       {
         "title": "PDC Dashboard",
-        "width": 900,
+        "width": 1024,
         "height": 600,
+        "minWidth": 800,
+        "minHeight": 500,
+        "center": true,
         "fullscreen": false,
         "resizable": true,
-        "decorations": false
+        "decorations": false,
+        "transparent": true
       }
     ]
   }
