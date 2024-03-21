@@ -1,10 +1,10 @@
-import Navbar from "./Navbar";
+import Header from "./Header";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <Navbar />
-      {children}
+      <Header />
+      <div className="w-full h-full px-6">{children}</div>
     </>
   );
 }
