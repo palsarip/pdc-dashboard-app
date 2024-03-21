@@ -5,24 +5,39 @@
 @layer base {
   .titlebar {
     height: 30px;
-    background: var(--background);
+    background: #26282b;
     user-select: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
   }
-  .titlebar-button {
-    display: inline-flex;
-    justify-content: center;
+  .titlebar-appname {
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #8d9199;
+    display: flex;
     align-items: center;
+  }
+  .titlebar-button {
     width: 30px;
     height: 30px;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #titlebar-close:hover {
+    background: #f8506b;
+    transition: all 0.1s ease-in-out;
   }
   .titlebar-button:hover {
-    background: #5bbec3;
+    background: #5e6165;
+    transition: all 0.1s ease-in-out;
   }
 
   :root {
@@ -58,7 +73,7 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 225 6% 13%;
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
