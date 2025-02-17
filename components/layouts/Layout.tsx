@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Header />
       <div className="min-h-screen p-14 text-[#F2F3F5]">
         <Navbar />
-        <MainSidebar />
+        {/* <MainSidebar /> */}
         {children}
       </div>
     </>
