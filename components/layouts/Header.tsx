@@ -1,9 +1,9 @@
 import { getCurrentWebviewWindow } from "@tauri-apps/api/webviewWindow";
-const appWindow = getCurrentWebviewWindow()
+const appWindow = getCurrentWebviewWindow();
 
 export default function Navbar() {
   return (
-    <>
+    <div className="mb-[2em] z-[9999]">
       <div data-tauri-drag-region className="titlebar">
         <div className="titlebar-appname">PDC Dashboard</div>
         <div>
@@ -36,6 +36,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
